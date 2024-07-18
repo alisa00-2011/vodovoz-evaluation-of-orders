@@ -1,0 +1,74 @@
+/* ----------------------- Default ----------------------- */
+input[type="checkbox"], input[type="radio"] { display: inline-block; margin-right: 7px; }
+
+/* ----------------------- Settings ----------------------- */
+.e-select:focus, .checker:focus, .radio:focus, .uploader:focus { outline: none; }
+
+/* ----------------------- Select ----------------------- */
+.e-select { position: relative; z-index: auto; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.e-select select { position: absolute; z-index: 5; top: 0; left: 0; right: 0; bottom: 0; height: 100%; width: 100%; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0; border: none; background: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ----------------------- Radio-buttons and checkboxes ----------------------- */
+.radio,
+.checker { display: inline-block; position: relative; width: 20px; height: 20px; background: transparent; border: 1px solid rgba(0, 0, 0, .35); cursor: pointer; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 250ms; -moz-transition: all 250ms; -o-transition: all 250ms; transition: all 250ms; overflow: hidden; backface-visibility: hidden; transform: translateZ(0); }
+
+.b-leaflet__orange .radio,
+.b-leaflet__orange .checker { border-color: rgba(255, 255, 255, .65); }
+
+.radio input,
+.checker input { position: absolute !important; z-index: 50; left: 0 !important; top: 0 !important; width: 100% !important; height: 100% !important; filter: alpha(opacity=0) !important; -moz-opacity: 0 !important; opacity: 0 !important; border: none; background: none; cursor: pointer; }
+
+.radio span,
+.checker span { display: block; position: relative; text-align: center; }
+
+.radio span:before,
+.checker span:before { -webkit-transition: all 250ms; -moz-transition: all 250ms; -o-transition: all 250ms; transition: all 250ms; }
+
+.radio.hover, label:hover .radio {  }
+.checker.hover, label:hover .checker {  }
+
+.radio.focus,
+.checker.focus {  }
+
+.m-error .radio,
+.m-error .checker { border-color: #c00 !important; }
+
+.radio.disabled,
+.checker.disabled { cursor: default !important; pointer-events: none; }
+
+.radio.disabled input,
+.checker.disabled input { cursor: default; }
+
+
+/* ----------------------- Checkboxes states ----------------------- */
+.checker { border-radius: 1px; }
+
+.checker span { position: absolute; z-index: 1; left: 0; top: 0; right: 0; bottom: 0; background: transparent; transition: all 400ms; }
+.checker span:before { display: block; position: relative; margin: 4px; width: 10px; height: 10px; border-radius: 1px; content: ''; visibility: hidden; opacity: 0; background: #ed6c00; }
+
+.checker span.checked:before { visibility: visible; opacity: 1; }
+
+.checker.disabled span:before {  }
+
+.b-leaflet__orange .checker span:before { background: #fff; }
+
+
+/* ----------------------- Radio-buttons states ----------------------- */
+.radio { border-radius: 50%; }
+
+.radio span { position: absolute; z-index: 1; left: 0; top: 0; right: 0; bottom: 0; }
+.radio span:before { display: block; position: relative; margin: 4px; width: 10px; height: 10px; content: ''; visibility: hidden; opacity: 0; background: #ed6c00; border-radius: 50%; }
+
+.radio span.checked:before { visibility: visible; opacity: 1; }
+
+.radio.disabled span:before {  }
+
+.b-leaflet__orange .radio span:before { background: #fff; }
+
+
+/* ----------------------- Uploader ----------------------- */
+.e-uploader { display: block !important; position: relative; margin: 0 !important; padding: 0 !important; cursor: pointer; white-space: normal; }
+.e-uploader input { visibility: hidden; position: absolute !important; z-index: 5; top: 0; left: 0; right: 0; bottom: 0; height: 100%; width: 100%; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0; border: none; background: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.e-uploader_btn { display: inline-block; vertical-align: middle !important; padding: 8px 4px; height: 32px; width: 82px; font: 300 14px/1 'Cuprum', sans-serif; border-radius: 5px; transition: all 250ms !important; }
+.e-uploader_file { display: inline-block; vertical-align: middle; min-width: 156px; padding-right: 16px; font: 300 16px 'Cuprum', sans-serif; color: #000; box-sizing: border-box; }

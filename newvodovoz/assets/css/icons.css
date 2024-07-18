@@ -1,0 +1,13 @@
+/* -------------------- Base64 -------------------- *//*
+.i-ico:before { display: block; background-position: center center; background-repeat: no-repeat; background-size: contain; content: ''; }
+
+.i-ico-transition { position: relative; }
+
+.i-ico-transition:after { display: block; position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 250ms; background-position: center center; background-repeat: no-repeat; background-size: contain; content: ''; }
+.i-ico-transition:before { display: block; position: relative; opacity: 1; transition: opacity 250ms; background-position: center center; background-repeat: no-repeat; background-size: contain; content: ''; }
+
+.i-ico-transition:hover:after { opacity: 1; }
+.i-ico-transition:hover:before { opacity: 0; }
+
+.i-ico-trigger:hover.i-ico-transition:after { opacity: 1; }
+.i-ico-trigger:hover.i-ico-transition:before { opacity: 0; } */

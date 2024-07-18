@@ -1,0 +1,28 @@
+/* lang: en */
+var i18n = {
+		basket_items_total : ' items, total cost: ',
+		basket_empty : 'Your cart is empty.',
+		basket_empty_html : '<h4 class="empty-content">Your cart is empty.</h4><p>Return to <a href="/">catalog</a> and add items into your cart.</p>',
+		basket_options : 'Options selection',
+		basket_add_button : 'Add to cart',
+		basket_add_short : 'Add',
+		vote_no_element : 'No selected variants',
+		vote_already_voted : 'You have already voted',
+		vote_total_votes : 'All votes:',
+		vote_rating : 'Rating:',
+		forms_empty_field : "Required field.",
+		forms_short_login : "Login is too short. Login should consist at least of three characters.",
+		forms_long_login : "Login is to long. Login should consist of no more than 40 characters.",
+		forms_short_pass : "Password is too short. Password should consist at least of six characters.",
+		forms_same_pass : "Login and password should be different.",
+		forms_confirm_pass : "Passwords should be identical.",
+		forms_invalid_email : "Invalid e-mail.",
+		checkout : "Checkout",
+		oneclick_checkout : "Fast order",
+		finish_message_prefix : "Order ",
+		finish_message_postfix : " successfully issued!<br/>Expect a call from the store manager.",
+		continue : "Continue",
+		max_file_size : "Maximum upload file size",
+		enter_captcha : "Enter the code",
+		reset_captcha : "Reload the code"
+	};
