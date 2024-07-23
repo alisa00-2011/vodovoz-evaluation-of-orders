@@ -3932,7 +3932,7 @@ numpages white bg
   margin-right: 4px;
 }
 
-.cabinet_orders_list .cabinet_order_item .cabinet_order_item_header .cabinet_order_item_status .orderPaymentStatus{
+.orderPaymentStatus{
   border-radius: 20px;
   padding: 0 8px;
 }
@@ -3944,7 +3944,7 @@ numpages white bg
   color:#4D4D4D;
 }
 
-.cabinet_orders_list .cabinet_order_item .cabinet_order_item_header .cabinet_order_item_title .ratingValue .isRatingAvailable{
+.isRatingAvailable{
   font-weight:400;
   color: #444444;
   text-decoration: none;
@@ -3955,12 +3955,12 @@ numpages white bg
   font-size: 20px;
 }
 
-.cabinet_orders_list .cabinet_order_item .cabinet_order_item_header .orderPaymentStatus{
+.orderPaymentStatus{
   color: #fff;
   line-height: 21px;
 }
 
-.cabinet_orders_list .cabinet_order_item .cabinet_order_item_warning{
+.cabinet_order_item_warning{
   display: flex;
   align-items: center;
   color: #000;
@@ -3974,10 +3974,14 @@ numpages white bg
   color: #4D4D4D;
 }
 
-.cabinet_orders_list .cabinet_order_item .cabinet_order_item_body .cabinet_order_item_info .isSelfDelivery, 
-.cabinet_orders_list .cabinet_order_item .cabinet_order_item_body .cabinet_order_item_info_date .deliveryDate,
-.cabinet_orders_list .cabinet_order_item .cabinet_order_item_body .cabinet_order_item_info_schedule .deliverySchedule,
-.cabinet_orders_list .cabinet_order_item .cabinet_order_item_body .cabinet_order_item_info_adress .deliveryAddress{
+.isSelfDelivery, 
+.deliveryDate,
+.deliverySchedule,
+.deliveryAddress,
+.orderSum,
+.orderPaymentType,
+.orderId,
+.cabinet_order_evaluation .cabinet_order_evaluation_total-price .cabinet_order_evaluation_total-price-value{
   font-weight: 700;
   color: #000;
 }
@@ -4022,11 +4026,11 @@ numpages white bg
 /*Статус оплаты заказа*/
 
 /*Заказ не оплачен*/
-.payment-not-paid .cabinet_order_item_header .cabinet_order_item_status .orderPaymentStatus{
+.payment-not-paid .orderPaymentStatus{
   background: #F91155;
 }
 /*Заказ оплачен*/
-.payment-paid .cabinet_order_item_header .cabinet_order_item_status .orderPaymentStatus{
+.payment-paid .orderPaymentStatus{
   background: #2A9B02;
 }
 /*Нет статуса оплаты*/
@@ -4070,55 +4074,55 @@ numpages white bg
 }
 
 /*Рейтинг заказа 1 звезда*/
-.rating-1-star .cabinet_order_item_title .ratingValue .stars .star-1{
+.rating-1-star .ratingValue .stars .star-1{
   content: url("../img/icons/cabinet/star-gold.svg");
 }
-.rating-1-star .cabinet_order_item_title .ratingValue .stars .star-2,
-.rating-1-star .cabinet_order_item_title .ratingValue .stars .star-3,
-.rating-1-star .cabinet_order_item_title .ratingValue .stars .star-4,
-.rating-1-star .cabinet_order_item_title .ratingValue .stars .star-5{
+.rating-1-star .ratingValue .stars .star-2,
+.rating-1-star .ratingValue .stars .star-3,
+.rating-1-star .ratingValue .stars .star-4,
+.rating-1-star .ratingValue .stars .star-5{
   content: url("../img/icons/cabinet/star-grey.svg");
 }
 
 /*Рейтинг заказа 2 звездыа*/
-.rating-2-star .cabinet_order_item_title .ratingValue .stars .star-1,
-.rating-2-star .cabinet_order_item_title .ratingValue .stars .star-2{
+.rating-2-star .ratingValue .stars .star-1,
+.rating-2-star .ratingValue .stars .star-2{
   content: url("../img/icons/cabinet/star-gold.svg");
 }
-.rating-2-star .cabinet_order_item_title .ratingValue .stars .star-3,
-.rating-2-star .cabinet_order_item_title .ratingValue .stars .star-4,
-.rating-2-star .cabinet_order_item_title .ratingValue .stars .star-5{
+.rating-2-star .ratingValue .stars .star-3,
+.rating-2-star .ratingValue .stars .star-4,
+.rating-2-star .ratingValue .stars .star-5{
   content: url("../img/icons/cabinet/star-grey.svg");
 }
 
 /*Рейтинг заказа 3 звезды*/
-.rating-3-star .cabinet_order_item_title .ratingValue .stars .star-1,
-.rating-3-star .cabinet_order_item_title .ratingValue .stars .star-2,
-.rating-3-star .cabinet_order_item_title .ratingValue .stars .star-3{
+.rating-3-star .ratingValue .stars .star-1,
+.rating-3-star .ratingValue .stars .star-2,
+.rating-3-star .ratingValue .stars .star-3{
   content: url("../img/icons/cabinet/star-gold.svg");
 }
-.rating-3-star .cabinet_order_item_title .ratingValue .stars .star-4,
-.rating-3-star .cabinet_order_item_title .ratingValue .stars .star-5{
+.rating-3-star .ratingValue .stars .star-4,
+.rating-3-star .ratingValue .stars .star-5{
   content: url("../img/icons/cabinet/star-grey.svg");
 }
 
 /*Рейтинг заказа 4 звезды*/
-.rating-4-star .cabinet_order_item_title .ratingValue .stars .star-1,
-.rating-4-star .cabinet_order_item_title .ratingValue .stars .star-2,
-.rating-4-star .cabinet_order_item_title .ratingValue .stars .star-3,
-.rating-4-star .cabinet_order_item_title .ratingValue .stars .star-4{
+.rating-4-star .ratingValue .stars .star-1,
+.rating-4-star .ratingValue .stars .star-2,
+.rating-4-star .ratingValue .stars .star-3,
+.rating-4-star .ratingValue .stars .star-4{
   content: url("../img/icons/cabinet/star-gold.svg");
 }
-.rating-4-star .cabinet_order_item_title .ratingValue .stars .star-5{
+.rating-4-star .ratingValue .stars .star-5{
   content: url("../img/icons/cabinet/star-grey.svg");
 }
 
 /*Рейтинг заказа 5 звезд*/
-.rating-5-star .cabinet_order_item_title .ratingValue .stars .star-1,
-.rating-5-star .cabinet_order_item_title .ratingValue .stars .star-2,
-.rating-5-star .cabinet_order_item_title .ratingValue .stars .star-3,
-.rating-5-star .cabinet_order_item_title .ratingValue .stars .star-4,
-.rating-5-star .cabinet_order_item_title .ratingValue .stars .star-5{
+.rating-5-star .ratingValue .stars .star-1,
+.rating-5-star .ratingValue .stars .star-2,
+.rating-5-star .ratingValue .stars .star-3,
+.rating-5-star .ratingValue .stars .star-4,
+.rating-5-star .ratingValue .stars .star-5{
   content: url("../img/icons/cabinet/star-gold.svg");
 }
 
@@ -4162,7 +4166,7 @@ numpages white bg
     line-height:20px;
   }
   
-  .cabinet_orders_list .cabinet_order_item .cabinet_order_item_header .cabinet_order_item_title .orderPaymentStatus{
+  .orderPaymentStatus{
     line-height: 17px;
   }
   
@@ -4170,5 +4174,363 @@ numpages white bg
     padding: 12px 0 0 0;
   }
   
+}
+
+/**---------CHANGES 19/07/24 evaluation of orders----------**/
+.cabinet_order_evaluation{
+  background: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_back{
+  display: flex;
+  font-size: 22px;
+  gap: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_actions,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .repeat-order-btn,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .сontact-us-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_actions,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus{
+  gap: 16px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .repeat-order-btn,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .сontact-us-btn{
+  gap: 4px;
+  color: #444444;
+  text-align: center;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .repeat-order-btn:hover,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .сontact-us-btn:hover{
+  cursor: pointer;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus-img, 
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .repeat-order-img,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .сontact-us-img{
+  width: 48px;
+  height: 48px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus-img,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .repeat-order-img,
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .сontact-us-img{
+  margin: auto;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_delivery-info{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_pay-order{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.cabinet_order_evaluation .cabinet_order_evaluation_pay-order .pay-order-button{
+  display: flex;
+  margin: auto;
+}
+.cabinet_order_evaluation .cabinet_order_evaluation_pay-order .pay-order-btn,
+.more-detailed_block .rate-order-btn{
+  background: #0085FF;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  width: 350px;
+  text-align: center;
+  text-decoration: none;
+}
+.cabinet_order_evaluation .cabinet_order_evaluation_pay-order .pay-order-btn:hover,
+.more-detailed_block .rate-order-btn:hover{
+  background: #2E3A59;
+  cursor: pointer;
+}
+
+
+.cabinet_order_evaluation .cabinet_order_evaluation_actions,
+.cabinet_order_evaluation .cabinet_order_evaluation_delivery-info,
+.cabinet_order_evaluation .cabinet_order_evaluation_rating,
+.cabinet_order_evaluation .cabinet_order_evaluation_order_items,
+.cabinet_order_evaluation .cabinet_order_evaluation_total-price,
+.cabinet_order_evaluation .cabinet_order_evaluation_payment-status,
+.cabinet_order_evaluation .cabinet_order_evaluation_payment-type,
+.cabinet_order_evaluation .cabinet_order_evaluation_delivery-date,
+.cabinet_order_evaluation .cabinet_order_evaluation_delivery-schedule,
+.cabinet_order_evaluation .cabinet_order_evaluation_order-id{
+  padding-bottom: 16px;
+  border-bottom: 1px solid #C6C6C8;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_rating .ratingValue{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_rating .ratingValue .stars{
+  display: flex;
+  gap: 8px;
+  margin: auto;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_rating .ratingValue .stars .star{
+  width: 34px;
+  height: 34px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_rating .ratingValue .more-detailed-btn{
+  text-decoration: none;
+  color: #0085FF;
+  border: none;
+  text-align: left;
+  width: min-content;
+  background: none;
+  padding: 0;
+  font: 400 .625em 'Cuprum', sans-serif;
+  font-size: 18px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_order_items{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_order_item{
+  display: flex;
+  gap: 8px;
+}
+
+.cabinet_order_evaluation .evaluation_order_item-product-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cabinet_order_evaluation .evaluation_order_item-info-img img{
+  width: 80px;
+  height: 80px;
+}
+
+.cabinet_order_evaluation .evaluation_order_item-product-info .evaluation_order_product-info-count{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_total-price{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_total-price .cabinet_order_evaluation_total-price-value{
+  font-size: 24px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_order-id{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cabinet_order_evaluation .cabinet_order_evaluation_order-id .evaluation_order-id-text{
+  display: flex;
+}
+
+.evaluation_order-id-copy-btn{
+  border: none;
+  background: none;
+}
+
+.status-order-being-formed .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus-img{
+  content: url("../img/icons/cabinet/status-order-being-formed.svg");
+}
+.status-order-awaiting-payment .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus-img{
+  content: url("../img/icons/cabinet/status-order-awaiting-payment.svg");
+}
+.status-order-formed .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus-img{
+  content: url("../img/icons/cabinet/status-order-formed.svg");
+}
+.status-order-collecting .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus-img{
+  content: url("../img/icons/cabinet/status-order-collecting.svg");
+}
+.status-order-delivering .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus-img{
+  content: url("../img/icons/cabinet/status-order-delivering.svg");
+}
+.status-order-received .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus-img{
+  content: url("../img/icons/cabinet/status-order-received.svg");
+}
+.status-order-canceled .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus-img{
+  content: url("../img/icons/cabinet/status-order-canceled.svg");
+}
+
+.rating-no-rating .cabinet_order_evaluation_rating{
+  display: none;
+}
+
+.rating-rate-order .cabinet_order_evaluation_rating .ratingValue .stars .star{
+  content: url("../img/icons/cabinet/star-grey.svg");
+}
+
+.payment-no-status .orderPaymentStatus{
+  color:#444444;
+}
+
+.more-detailed_block{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.more-detailed_block p{
+  margin-bottom: 8px;
+}
+
+.more-detailed_block .more-detailed_block_item{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.more-detailed_block .more-detailed_block_item .checker{
+  border: 2px solid #444444;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+.more-detailed_block .more-detailed_block_item .checker input{
+   width: 18px!important;
+  height: 18px!important;
+}
+
+.more-detailed_block .more-detailed_block_item .checker.checked{
+  border: none
+}
+.more-detailed_block .more-detailed_block_item .checker span:before{
+  background: url("../img/icons/cabinet/checked.svg");
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  border-radius: 0px;
+}
+
+.more-detailed_block .more-detailed_comment{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #C6C6C8;
+  border-radius: 20px;
+  padding: 5px 16px;
+  margin-top: 8px;
+}
+
+.more-detailed_block .more-detailed_comment label{
+  font-size: 14px;
+  color: #9F9F9F;
+}
+.more-detailed_block .more-detailed_comment textarea{
+  text-align: left;
+  border: none;
+  font: 400 .625em 'Cuprum', sans-serif;
+  font-size: 18px;
+  max-width: 100%;
+}
+
+.more-detailed_block .rate-order-btn{
+  font: 400 .625em 'Cuprum', sans-serif;
+  font-size: 18px;
+  margin-top: 8px;
+  border: none;
+  margin: auto;
+}
+
+.details-added .more-detailed_block .more-detailed_block_item .checker{
+  display: none;
+}
+
+.details-added .more-detailed_block .more-detailed_block_item label::before{
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #D9D9D9;
+  margin-right: 4px;
+}
+
+@media (max-width:768px){
+  .cabinet_order_evaluation{
+    font-size: 14px;
+  }
   
+  .cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus{
+    font-size: 18px;
+  }
+
+  .cabinet_order_evaluation .cabinet_order_evaluation_pay-order .pay-order-btn,
+  .more-detailed_block .rate-order-btn{
+    width: 100%;
+  }
+
+  .cabinet_order_evaluation .evaluation_order_item-product-info .evaluation_order_product-info-count{
+    font-size: 16px;
+  }
+
+  .cabinet_order_evaluation .cabinet_order_evaluation_rating .ratingValue .more-detailed-btn{
+    font-size: 14px;
+  }
+  
+  .more-detailed_block .more-detailed_comment label{
+    font-size: 12px;
+  }
+  .more-detailed_block .more-detailed_comment textarea{
+    font-size: 14px;
+  }
+  
+  .cabinet_order_evaluation .cabinet_order_evaluation_order-id .evaluation_order-id-text{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cabinet_order_evaluation .cabinet_order_evaluation_pay-order .pay-order-button{
+    margin: 0;
+    font-size: 18px;
+  }
 }

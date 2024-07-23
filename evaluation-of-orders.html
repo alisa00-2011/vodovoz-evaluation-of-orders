@@ -437,30 +437,34 @@
                   </div>
                   <div class="col-xs-24 col-md-16 col-lg-18">
                      <div class="b-page_columns_content">
-                        <div class="cabinet_orders_list">
-                           <!--Заказ оформляется, не оплачен-->
-                           <div class="cabinet_order_item status-order-being-formed payment-not-paid rating-no-rating delivery-delivery">
-                              <div class="cabinet_order_item_header">
-                                 <div class="cabinet_order_item_title">
-                                    <div class="orderStatus">Заказ оформляется</div>
-                                    <div class="ratingValue">
-                                       <a href="" class="isRatingAvailable">оцените заказ</a>
-                                       <div class="stars">
-                                          <div class="star star-1"></div>
-                                          <div class="star star-2"></div>
-                                          <div class="star star-3"></div>
-                                          <div class="star star-4"></div>
-                                          <div class="star star-5"></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="cabinet_order_item_price">
-                                       Заказ № <span class="orderId">24512576</span> на сумму <span class="orderSum">1290</span> ₽
-                                 </div>
-                                 <div class="cabinet_order_item_status">
-                                    <div class="orderPaymentStatus">Не оплачен</div>
-                                 </div>
+                        <div class="cabinet_order_evaluation status-order-being-formed payment-paid rating-rate-order">
+                           <a href="#" class="cabinet_order_evaluation_back">
+                              <img src="newvodovoz/assets/img/icons/cabinet/back.svg" />
+                              Назад
+                           </a>
+                           <div class="cabinet_order_evaluation_actions">
+                              <div class="cabinet_order_evaluation_orderStatus">
+                                 <div class="orderStatus-img"></div>
+                                 <div class="orderStatus">Заказ оформляется</div>
                               </div>
+                              <div class="cabinet_order_evaluation_buttons">
+                                 <a class="repeat-order-btn">
+                                    <img class="repeat-order-img" src="newvodovoz/assets/img/icons/cabinet/repeat-order.svg" />
+                                    <span>Повторить<br/> заказ</span>
+                                 </a>
+                                 <a class="сontact-us-btn">
+                                    <img class="сontact-us-img" src="newvodovoz/assets/img/icons/cabinet/сontact-us.svg" />
+                                    <span>Связаться<br/>  с нами</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="cabinet_order_evaluation_delivery-info">
+                              <div class="isSelfDelivery">Доставка:</div>
+                              <div class="cabinet_order_evaluation_info_adress">
+                                 Адрес: <span class="deliveryAddress">г. Санкт-Петербург, ул. Седова, д. 12</span>
+                              </div>
+                           </div>
+                           <div class="cabinet_order_evaluation_pay-order">
                               <div  class="cabinet_order_item_warning">
                                  <div class="images">
                                     <svg width="28.000000" height="24.500000" viewBox="0 0 28 24.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -473,379 +477,102 @@
                                     Оплатите заказ или выберите другой способ оплаты.
                                  </div>
                               </div>
-                              <div class="cabinet_order_item_body">
-                                 <div class="cabinet_order_item_info">
-                                    <div class="isSelfDelivery">Доставка:</div>
-                                    <div class="cabinet_order_item_info_date">
-                                       Дата: <span class="deliveryDate">24.04.2024</span>
+                              <div class="pay-order-button">
+                                 <a href="" class="pay-order-btn">Оплатить</a>
+                              </div>
+                           </div>
+                           <div class="cabinet_order_evaluation_rating">
+                              <div class="ratingValue">
+                                 <a href="" class="isRatingAvailable">Оцените заказ</a>
+                                 <div class="stars">
+                                    <div class="star star-1"></div>
+                                    <div class="star star-2"></div>
+                                    <div class="star star-3"></div>
+                                    <div class="star star-4"></div>
+                                    <div class="star star-5"></div>
+                                 </div>
+                                 <button class="more-detailed-btn">Подробнее</button>    
+                              </div>
+                              <form class="more-detailed_block">
+                                 <p>Добавьте подробностей:</p>
+                                 <div class="more-detailed_block_item">
+                                    <input type="checkbox" id="courier-late" name="courier-late" value="courier-late" />
+                                    <label for="courier-late">Курьер опоздал</label>
+                                 </div>
+                                 <div class="more-detailed_block_item">
+                                    <input type="checkbox" id="courier-impolite" name="courier-impolite" value="courier-impolite" />
+                                    <label for="courier-impolite">Курьер был невежлив</label>
+                                 </div>
+                                 <div class="more-detailed_block_item">
+                                    <input type="checkbox" id="add-comment" name="add-comment" value="add-comment" />
+                                    <label for="add-comment">Добавить комментарий</label>
+                                 </div>
+                                 <div class="more-detailed_comment">
+                                    <label for="comment">Комментарий</label>
+                                    <textarea id="comment" name="comment" rows="1">Текст комментария</textarea>
+                                 </div>
+                                 <button class="rate-order-btn">Оценить</button>
+                              </form>
+                           </div>
+                           <div class="cabinet_order_evaluation_order_items">
+                              <div class="cabinet_order_evaluation_order_item">
+                                 <div class="evaluation_order_item-info-img">
+                                    <a href="/pompy/butyl-19-l-novaya/">
+                                       <img data-src="/images/cms/thumbs/9799c8258567b66fc1873aa4697de592b97d61ed/butyl-polikarbonatnaya-18_9-l-soton-mnogorazovogo-ispolzovaniya_auto_120_jpg.jpg" src="/images/cms/thumbs/9799c8258567b66fc1873aa4697de592b97d61ed/butyl-polikarbonatnaya-18_9-l-soton-mnogorazovogo-ispolzovaniya_auto_120_jpg.jpg" alt="Пустая бутыль 19л.">
+                                    </a>
+                                 </div>
+                                 <div class="evaluation_order_item-product-info">
+                                    <div  class="product-info-name">
+                                       <span class="nomenclatureId">Кислородная Premium</span>
                                     </div>
-                                    <div class="cabinet_order_item_info_schedule">
-                                       Время доставки: <span class="deliverySchedule">с 12:00 до 18:00</span>
+                                    <div class="evaluation_order_product-info-count">
+                                       <span class="count">2</span>&nbsp; шт. |&nbsp; <span class="price sDiscountInMoney discount">620</span>&nbsp; ₽
                                     </div>
-                                    <div class="cabinet_order_item_info_adress">
-                                       Адрес: <span class="deliveryAddress">г. Санкт-Петербург, ул. Седова, д. 12</span>
+                                 </div>
+                              </div>
+                              <div class="cabinet_order_evaluation_order_item">
+                                 <div class="evaluation_order_item-info-img">
+                                    <a href="/pompy/butyl-19-l-novaya/">
+                                       <img data-src="/images/cms/thumbs/9799c8258567b66fc1873aa4697de592b97d61ed/butyl-polikarbonatnaya-18_9-l-soton-mnogorazovogo-ispolzovaniya_auto_120_jpg.jpg" src="/images/cms/thumbs/9799c8258567b66fc1873aa4697de592b97d61ed/butyl-polikarbonatnaya-18_9-l-soton-mnogorazovogo-ispolzovaniya_auto_120_jpg.jpg" alt="Пустая бутыль 19л.">
+                                    </a>
+                                 </div>
+                                 <div class="evaluation_order_item-product-info">
+                                    <div  class="product-info-name">
+                                       <span class="nomenclatureId">Кислородная Premium</span>
+                                    </div>
+                                    <div class="evaluation_order_product-info-count">
+                                       <span class="count">2</span>&nbsp; шт. |&nbsp; <span class="price sDiscountInMoney discount">620</span>&nbsp; ₽
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <!-- Заказ ожидает оплаты, не оплачен-->
-                           <div class="cabinet_order_item status-order-awaiting-payment payment-not-paid rating-rate-order delivery-pickup">
-                              <div class="cabinet_order_item_header">
-                                 <div class="cabinet_order_item_title">
-                                    <div class="orderStatus">Заказ ожидает оплаты</div>
-                                    <div class="ratingValue">
-                                       <a href="" class="isRatingAvailable">оцените заказ</a>
-                                       <div class="stars">
-                                          <div class="star star-1"></div>
-                                          <div class="star star-2"></div>
-                                          <div class="star star-3"></div>
-                                          <div class="star star-4"></div>
-                                          <div class="star star-5"></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="cabinet_order_item_price">
-                                       Заказ № <span class="orderId">24512576</span> на сумму <span class="orderSum">1290</span> ₽
-                                 </div>
-                                 <div class="cabinet_order_item_status">
-                                    <div class="orderPaymentStatus">Не оплачен</div>
-                                 </div>
-                              </div>
-                              <div  class="cabinet_order_item_warning">
-                                 <div class="images">
-                                    <svg width="28.000000" height="24.500000" viewBox="0 0 28 24.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                       <defs/>
-                                       <path id="Vector" d="M0 22.75C0 23.71 0.62 24.5 1.39 24.5L26.6 24.5C27.37 24.5 28 23.71 28 22.75L28 5.25L0 5.25L0 22.75ZM19.6 11.37C19.6 10.89 19.91 10.5 20.29 10.5L24.5 10.5C24.88 10.5 25.2 10.89 25.2 11.37L25.2 13.12C25.2 13.6 24.88 14 24.5 14L20.29 14C19.91 14 19.6 13.6 19.6 13.12L19.6 11.37ZM19.6 17.93C19.6 17.69 19.75 17.5 19.95 17.5L24.85 17.5C25.04 17.5 25.2 17.69 25.2 17.93L25.2 18.81C25.2 19.05 25.04 19.25 24.85 19.25L19.95 19.25C19.75 19.25 19.6 19.05 19.6 18.81L19.6 17.93ZM2.79 12.68C2.79 12.44 2.95 12.25 3.14 12.25L16.45 12.25C16.64 12.25 16.79 12.44 16.79 12.68L16.79 13.56C16.79 13.8 16.64 14 16.45 14L3.14 14C2.95 14 2.79 13.8 2.79 13.56L2.79 12.68ZM2.79 17.93C2.79 17.69 2.95 17.5 3.14 17.5L10.85 17.5C11.04 17.5 11.2 17.69 11.2 17.93L11.2 18.81C11.2 19.05 11.04 19.25 10.85 19.25L3.14 19.25C2.95 19.25 2.79 19.05 2.79 18.81L2.79 17.93ZM27.29 0L0.7 0C0.31 0 0 0.39 0 0.87L0 3.5L28 3.5L28 0.87C28 0.39 27.68 0 27.29 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                    </svg>
-                                 </div>
-                                 <div class="isNeedPayment">
-                                    Заказ не будет доставлен!<br/>
-                                    Оплатите заказ или выберите другой способ оплаты.
-                                 </div>
-                              </div>
-                              <div class="cabinet_order_item_body">
-                                 <div class="cabinet_order_item_info">
-                                    <div class="isSelfDelivery">Самовывоз:</div>
-                                    <div class="cabinet_order_item_info_date">
-                                       Дата: <span class="deliveryDate">24.04.2024</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_schedule">
-                                       Время доставки: <span class="deliverySchedule">с 12:00 до 18:00</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_adress">
-                                       Адрес: <span class="deliveryAddress">г. Санкт-Петербург, ул. Седова, д. 12</span>
-                                    </div>
-                                 </div>
+                           <div class="cabinet_order_evaluation_total-price">
+                              <div class="cabinet_order_evaluation_total-price-title">Сумма</div>
+                              <div class="cabinet_order_evaluation_total-price-value"> 
+                                 <span class="orderSum">1240</span> ₽
                               </div>
                            </div>
-                           <!-- Заказ оформлен -->
-                           <div class="cabinet_order_item status-order-formed payment-no-status rating-1-star delivery-delivery">
-                              <div class="cabinet_order_item_header">
-                                 <div class="cabinet_order_item_title">
-                                    <div class="orderStatus">Заказ оформлен</div>
-                                    <div class="ratingValue">
-                                       <a href="" class="isRatingAvailable">оцените заказ</a>
-                                       <div class="stars">
-                                          <div class="star star-1"></div>
-                                          <div class="star star-2"></div>
-                                          <div class="star star-3"></div>
-                                          <div class="star star-4"></div>
-                                          <div class="star star-5"></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="cabinet_order_item_price">
-                                       Заказ № <span class="orderId">24512576</span> на сумму <span class="orderSum">1290</span> ₽
-                                 </div>
-                                 <div class="cabinet_order_item_status">
-                                    <div class="orderPaymentStatus">Не оплачен</div>
-                                 </div>
-                              </div>
-                              <div  class="cabinet_order_item_warning">
-                                 <div class="images">
-                                    <svg width="28.000000" height="24.500000" viewBox="0 0 28 24.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                       <defs/>
-                                       <path id="Vector" d="M0 22.75C0 23.71 0.62 24.5 1.39 24.5L26.6 24.5C27.37 24.5 28 23.71 28 22.75L28 5.25L0 5.25L0 22.75ZM19.6 11.37C19.6 10.89 19.91 10.5 20.29 10.5L24.5 10.5C24.88 10.5 25.2 10.89 25.2 11.37L25.2 13.12C25.2 13.6 24.88 14 24.5 14L20.29 14C19.91 14 19.6 13.6 19.6 13.12L19.6 11.37ZM19.6 17.93C19.6 17.69 19.75 17.5 19.95 17.5L24.85 17.5C25.04 17.5 25.2 17.69 25.2 17.93L25.2 18.81C25.2 19.05 25.04 19.25 24.85 19.25L19.95 19.25C19.75 19.25 19.6 19.05 19.6 18.81L19.6 17.93ZM2.79 12.68C2.79 12.44 2.95 12.25 3.14 12.25L16.45 12.25C16.64 12.25 16.79 12.44 16.79 12.68L16.79 13.56C16.79 13.8 16.64 14 16.45 14L3.14 14C2.95 14 2.79 13.8 2.79 13.56L2.79 12.68ZM2.79 17.93C2.79 17.69 2.95 17.5 3.14 17.5L10.85 17.5C11.04 17.5 11.2 17.69 11.2 17.93L11.2 18.81C11.2 19.05 11.04 19.25 10.85 19.25L3.14 19.25C2.95 19.25 2.79 19.05 2.79 18.81L2.79 17.93ZM27.29 0L0.7 0C0.31 0 0 0.39 0 0.87L0 3.5L28 3.5L28 0.87C28 0.39 27.68 0 27.29 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                    </svg>
-                                 </div>
-                                 <div class="isNeedPayment">
-                                    Заказ не будет доставлен!<br/>
-                                    Оплатите заказ или выберите другой способ оплаты.
-                                 </div>
-                              </div>
-                              <div class="cabinet_order_item_body">
-                                 <div class="cabinet_order_item_info">
-                                    <div class="isSelfDelivery">Доставка:</div>
-                                    <div class="cabinet_order_item_info_date">
-                                       Дата: <span class="deliveryDate">24.04.2024</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_schedule">
-                                       Время доставки: <span class="deliverySchedule">с 12:00 до 18:00</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_adress">
-                                       Адрес: <span class="deliveryAddress">г. Санкт-Петербург, ул. Седова, д. 12</span>
-                                    </div>
-                                 </div>
-                              </div>
+                           <div class="cabinet_order_evaluation_payment-status">
+                              Статус оплаты: <span class="orderPaymentStatus">Оплачен</span>
                            </div>
-                           <!-- Заказ собирается -->
-                           <div class="cabinet_order_item status-order-collecting payment-no-status rating-2-star delivery-delivery">
-                              <div class="cabinet_order_item_header">
-                                 <div class="cabinet_order_item_title">
-                                    <div class="orderStatus">Заказ собирается</div>
-                                    <div class="ratingValue">
-                                       <a href="" class="isRatingAvailable">оцените заказ</a>
-                                       <div class="stars">
-                                          <div class="star star-1"></div>
-                                          <div class="star star-2"></div>
-                                          <div class="star star-3"></div>
-                                          <div class="star star-4"></div>
-                                          <div class="star star-5"></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="cabinet_order_item_price">
-                                       Заказ № <span class="orderId">24512576</span> на сумму <span class="orderSum">1290</span> ₽
-                                 </div>
-                                 <div class="cabinet_order_item_status">
-                                    <div class="orderPaymentStatus">Не оплачен</div>
-                                 </div>
-                              </div>
-                              <div  class="cabinet_order_item_warning">
-                                 <div class="images">
-                                    <svg width="28.000000" height="24.500000" viewBox="0 0 28 24.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                       <defs/>
-                                       <path id="Vector" d="M0 22.75C0 23.71 0.62 24.5 1.39 24.5L26.6 24.5C27.37 24.5 28 23.71 28 22.75L28 5.25L0 5.25L0 22.75ZM19.6 11.37C19.6 10.89 19.91 10.5 20.29 10.5L24.5 10.5C24.88 10.5 25.2 10.89 25.2 11.37L25.2 13.12C25.2 13.6 24.88 14 24.5 14L20.29 14C19.91 14 19.6 13.6 19.6 13.12L19.6 11.37ZM19.6 17.93C19.6 17.69 19.75 17.5 19.95 17.5L24.85 17.5C25.04 17.5 25.2 17.69 25.2 17.93L25.2 18.81C25.2 19.05 25.04 19.25 24.85 19.25L19.95 19.25C19.75 19.25 19.6 19.05 19.6 18.81L19.6 17.93ZM2.79 12.68C2.79 12.44 2.95 12.25 3.14 12.25L16.45 12.25C16.64 12.25 16.79 12.44 16.79 12.68L16.79 13.56C16.79 13.8 16.64 14 16.45 14L3.14 14C2.95 14 2.79 13.8 2.79 13.56L2.79 12.68ZM2.79 17.93C2.79 17.69 2.95 17.5 3.14 17.5L10.85 17.5C11.04 17.5 11.2 17.69 11.2 17.93L11.2 18.81C11.2 19.05 11.04 19.25 10.85 19.25L3.14 19.25C2.95 19.25 2.79 19.05 2.79 18.81L2.79 17.93ZM27.29 0L0.7 0C0.31 0 0 0.39 0 0.87L0 3.5L28 3.5L28 0.87C28 0.39 27.68 0 27.29 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                    </svg>
-                                 </div>
-                                 <div class="isNeedPayment">
-                                    Заказ не будет доставлен!<br/>
-                                    Оплатите заказ или выберите другой способ оплаты.
-                                 </div>
-                              </div>
-                              <div class="cabinet_order_item_body">
-                                 <div class="cabinet_order_item_info">
-                                    <div class="isSelfDelivery">Доставка:</div>
-                                    <div class="cabinet_order_item_info_date">
-                                       Дата: <span class="deliveryDate">24.04.2024</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_schedule">
-                                       Время доставки: <span class="deliverySchedule">с 12:00 до 18:00</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_adress">
-                                       Адрес: <span class="deliveryAddress">г. Санкт-Петербург, ул. Седова, д. 12</span>
-                                    </div>
-                                 </div>
-                              </div>
+                           <div class="cabinet_order_evaluation_payment-type">
+                              Способ оплаты: <span class="orderPaymentType">Наличные</span>
                            </div>
-                           <!-- Заказ доставляется -->
-                           <div class="cabinet_order_item status-order-delivering payment-no-status rating-3-star delivery-delivery">
-                              <div class="cabinet_order_item_header">
-                                 <div class="cabinet_order_item_title">
-                                    <div class="orderStatus">Заказ доставляется</div>
-                                    <div class="ratingValue">
-                                       <a href="" class="isRatingAvailable">оцените заказ</a>
-                                       <div class="stars">
-                                          <div class="star star-1"></div>
-                                          <div class="star star-2"></div>
-                                          <div class="star star-3"></div>
-                                          <div class="star star-4"></div>
-                                          <div class="star star-5"></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="cabinet_order_item_price">
-                                       Заказ № <span class="orderId">24512576</span> на сумму <span class="orderSum">1290</span> ₽
-                                 </div>
-                                 <div class="cabinet_order_item_status">
-                                    <div class="orderPaymentStatus">Не оплачен</div>
-                                 </div>
-                              </div>
-                              <div  class="cabinet_order_item_warning">
-                                 <div class="images">
-                                    <svg width="28.000000" height="24.500000" viewBox="0 0 28 24.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                       <defs/>
-                                       <path id="Vector" d="M0 22.75C0 23.71 0.62 24.5 1.39 24.5L26.6 24.5C27.37 24.5 28 23.71 28 22.75L28 5.25L0 5.25L0 22.75ZM19.6 11.37C19.6 10.89 19.91 10.5 20.29 10.5L24.5 10.5C24.88 10.5 25.2 10.89 25.2 11.37L25.2 13.12C25.2 13.6 24.88 14 24.5 14L20.29 14C19.91 14 19.6 13.6 19.6 13.12L19.6 11.37ZM19.6 17.93C19.6 17.69 19.75 17.5 19.95 17.5L24.85 17.5C25.04 17.5 25.2 17.69 25.2 17.93L25.2 18.81C25.2 19.05 25.04 19.25 24.85 19.25L19.95 19.25C19.75 19.25 19.6 19.05 19.6 18.81L19.6 17.93ZM2.79 12.68C2.79 12.44 2.95 12.25 3.14 12.25L16.45 12.25C16.64 12.25 16.79 12.44 16.79 12.68L16.79 13.56C16.79 13.8 16.64 14 16.45 14L3.14 14C2.95 14 2.79 13.8 2.79 13.56L2.79 12.68ZM2.79 17.93C2.79 17.69 2.95 17.5 3.14 17.5L10.85 17.5C11.04 17.5 11.2 17.69 11.2 17.93L11.2 18.81C11.2 19.05 11.04 19.25 10.85 19.25L3.14 19.25C2.95 19.25 2.79 19.05 2.79 18.81L2.79 17.93ZM27.29 0L0.7 0C0.31 0 0 0.39 0 0.87L0 3.5L28 3.5L28 0.87C28 0.39 27.68 0 27.29 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                    </svg>
-                                 </div>
-                                 <div class="isNeedPayment">
-                                    Заказ не будет доставлен!<br/>
-                                    Оплатите заказ или выберите другой способ оплаты.
-                                 </div>
-                              </div>
-                              <div class="cabinet_order_item_body">
-                                 <div class="cabinet_order_item_info">
-                                    <div class="isSelfDelivery">Доставка:</div>
-                                    <div class="cabinet_order_item_info_date">
-                                       Дата: <span class="deliveryDate">24.04.2024</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_schedule">
-                                       Время доставки: <span class="deliverySchedule">с 12:00 до 18:00</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_adress">
-                                       Адрес: <span class="deliveryAddress">г. Санкт-Петербург, ул. Седова, д. 12</span>
-                                    </div>
-                                 </div>
-                              </div>
+                           <div class="cabinet_order_evaluation_delivery-date">
+                              Дата доставки: <span class="deliveryDate">24.02.2024</span>
                            </div>
-                           <!-- Заказ получен -->
-                           <div class="cabinet_order_item status-order-received payment-paid rating-4-star delivery-delivery">
-                              <div class="cabinet_order_item_header">
-                                 <div class="cabinet_order_item_title">
-                                    <div class="orderStatus">Заказ получен</div>
-                                    <div class="ratingValue">
-                                       <a href="" class="isRatingAvailable">оцените заказ</a>
-                                       <div class="stars">
-                                          <div class="star star-1"></div>
-                                          <div class="star star-2"></div>
-                                          <div class="star star-3"></div>
-                                          <div class="star star-4"></div>
-                                          <div class="star star-5"></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="cabinet_order_item_price">
-                                       Заказ № <span class="orderId">24512576</span> на сумму <span class="orderSum">1290</span> ₽
-                                 </div>
-                                 <div class="cabinet_order_item_status">
-                                    <div class="orderPaymentStatus">Оплачен</div>
-                                 </div>
-                              </div>
-                              <div  class="cabinet_order_item_warning">
-                                 <div class="images">
-                                    <svg width="28.000000" height="24.500000" viewBox="0 0 28 24.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                       <defs/>
-                                       <path id="Vector" d="M0 22.75C0 23.71 0.62 24.5 1.39 24.5L26.6 24.5C27.37 24.5 28 23.71 28 22.75L28 5.25L0 5.25L0 22.75ZM19.6 11.37C19.6 10.89 19.91 10.5 20.29 10.5L24.5 10.5C24.88 10.5 25.2 10.89 25.2 11.37L25.2 13.12C25.2 13.6 24.88 14 24.5 14L20.29 14C19.91 14 19.6 13.6 19.6 13.12L19.6 11.37ZM19.6 17.93C19.6 17.69 19.75 17.5 19.95 17.5L24.85 17.5C25.04 17.5 25.2 17.69 25.2 17.93L25.2 18.81C25.2 19.05 25.04 19.25 24.85 19.25L19.95 19.25C19.75 19.25 19.6 19.05 19.6 18.81L19.6 17.93ZM2.79 12.68C2.79 12.44 2.95 12.25 3.14 12.25L16.45 12.25C16.64 12.25 16.79 12.44 16.79 12.68L16.79 13.56C16.79 13.8 16.64 14 16.45 14L3.14 14C2.95 14 2.79 13.8 2.79 13.56L2.79 12.68ZM2.79 17.93C2.79 17.69 2.95 17.5 3.14 17.5L10.85 17.5C11.04 17.5 11.2 17.69 11.2 17.93L11.2 18.81C11.2 19.05 11.04 19.25 10.85 19.25L3.14 19.25C2.95 19.25 2.79 19.05 2.79 18.81L2.79 17.93ZM27.29 0L0.7 0C0.31 0 0 0.39 0 0.87L0 3.5L28 3.5L28 0.87C28 0.39 27.68 0 27.29 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                    </svg>
-                                 </div>
-                                 <div class="isNeedPayment">
-                                    Заказ не будет доставлен!<br/>
-                                    Оплатите заказ или выберите другой способ оплаты.
-                                 </div>
-                              </div>
-                              <div class="cabinet_order_item_body">
-                                 <div class="cabinet_order_item_info">
-                                    <div class="isSelfDelivery">Доставка:</div>
-                                    <div class="cabinet_order_item_info_date">
-                                       Дата: <span class="deliveryDate">24.04.2024</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_schedule">
-                                       Время доставки: <span class="deliverySchedule">с 12:00 до 18:00</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_adress">
-                                       Адрес: <span class="deliveryAddress">г. Санкт-Петербург, ул. Седова, д. 12</span>
-                                    </div>
-                                 </div>
-                              </div>
+                           <div class="cabinet_order_evaluation_delivery-schedule">
+                              Время доставки: <span class="deliverySchedule">с 12:00 до 18:00</span>
                            </div>
-                           <!-- Заказ отменён -->
-                           <div class="cabinet_order_item status-order-canceled payment-no-status rating-5-star delivery-delivery">
-                              <div class="cabinet_order_item_header">
-                                 <div class="cabinet_order_item_title">
-                                    <div class="orderStatus">Заказ отменён</div>
-                                    <div class="ratingValue">
-                                       <a href="" class="isRatingAvailable">оцените заказ</a>
-                                       <div class="stars">
-                                          <div class="star star-1"></div>
-                                          <div class="star star-2"></div>
-                                          <div class="star star-3"></div>
-                                          <div class="star star-4"></div>
-                                          <div class="star star-5"></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="cabinet_order_item_price">
-                                       Заказ № <span class="orderId">24512576</span> на сумму <span class="orderSum">1290</span> ₽
-                                 </div>
-                                 <div class="cabinet_order_item_status">
-                                    <div class="orderPaymentStatus">Не оплачен</div>
-                                 </div>
+                           <div class="cabinet_order_evaluation_order-id">
+                              <div class="evaluation_order-id-text">
+                                 Номер заказа: <div class="orderId"> 2163461</div> 
                               </div>
-                              <div  class="cabinet_order_item_warning">
-                                 <div class="images">
-                                    <svg width="28.000000" height="24.500000" viewBox="0 0 28 24.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                       <defs/>
-                                       <path id="Vector" d="M0 22.75C0 23.71 0.62 24.5 1.39 24.5L26.6 24.5C27.37 24.5 28 23.71 28 22.75L28 5.25L0 5.25L0 22.75ZM19.6 11.37C19.6 10.89 19.91 10.5 20.29 10.5L24.5 10.5C24.88 10.5 25.2 10.89 25.2 11.37L25.2 13.12C25.2 13.6 24.88 14 24.5 14L20.29 14C19.91 14 19.6 13.6 19.6 13.12L19.6 11.37ZM19.6 17.93C19.6 17.69 19.75 17.5 19.95 17.5L24.85 17.5C25.04 17.5 25.2 17.69 25.2 17.93L25.2 18.81C25.2 19.05 25.04 19.25 24.85 19.25L19.95 19.25C19.75 19.25 19.6 19.05 19.6 18.81L19.6 17.93ZM2.79 12.68C2.79 12.44 2.95 12.25 3.14 12.25L16.45 12.25C16.64 12.25 16.79 12.44 16.79 12.68L16.79 13.56C16.79 13.8 16.64 14 16.45 14L3.14 14C2.95 14 2.79 13.8 2.79 13.56L2.79 12.68ZM2.79 17.93C2.79 17.69 2.95 17.5 3.14 17.5L10.85 17.5C11.04 17.5 11.2 17.69 11.2 17.93L11.2 18.81C11.2 19.05 11.04 19.25 10.85 19.25L3.14 19.25C2.95 19.25 2.79 19.05 2.79 18.81L2.79 17.93ZM27.29 0L0.7 0C0.31 0 0 0.39 0 0.87L0 3.5L28 3.5L28 0.87C28 0.39 27.68 0 27.29 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
-                                    </svg>
-                                 </div>
-                                 <div class="isNeedPayment">
-                                    Заказ не будет доставлен!<br/>
-                                    Оплатите заказ или выберите другой способ оплаты.
-                                 </div>
-                              </div>
-                              <div class="cabinet_order_item_body">
-                                 <div class="cabinet_order_item_info">
-                                    <div class="isSelfDelivery">Доставка:</div>
-                                    <div class="cabinet_order_item_info_date">
-                                       Дата: <span class="deliveryDate">24.04.2024</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_schedule">
-                                       Время доставки: <span class="deliverySchedule">с 12:00 до 18:00</span>
-                                    </div>
-                                    <div class="cabinet_order_item_info_adress">
-                                       Адрес: <span class="deliveryAddress">г. Санкт-Петербург, ул. Седова, д. 12</span>
-                                    </div>
-                                 </div>
-                              </div>
+                              <button class="evaluation_order-id-copy-btn">
+                                 <img src="newvodovoz/assets/img/icons/cabinet/copy.svg"/>
+                              </button>
                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div style="display:none">
-            <div class="vModal vModal--checkBottle" id="vModal--checkBottle">
-               <div class="vModal-userFormWrapper">
-                  <div class="vModal-userFormWrapper__header">
-                     <h3>
-                        <img loading="lazy" src="/templates/newvodovoz/assets/img/icons/cabinet/bouttle_popup_icon.svg">
-                        <div>Бутылей у Вас: <span class="accept">x<span class="cabinet-user-bottle-count-popup"></span></span></div>
-                     </h3>
-                     <p>
-                        Если указано ошибочное количество бутылей,
-                        сообщите нам об этом, заполнив заявку ниже. <br>Наш менеджер свяжется с Вами.
-                     </p>
-                  </div>
-                  <div class="vModal-userFormWrapper__body">
-                     <form class="vModal-userForm" action="/udata/users/sendBottleInfo/.json" method="get" novalidate="" enctype="multipart/form-data" data-ajax="">
-                        <div class="vModal-userForm__input vModal-userForm__input--submit"><button type="submit">Отправить заявку</button></div>
-                        <div class="form-error-str response"></div>
-                     </form>
-                  </div>
-                  <div class="loadingWrap">
-                     <div class="loading-dots">
-                        <div class="loading-dots--dot"></div>
-                        <div class="loading-dots--dot"></div>
-                        <div class="loading-dots--dot"></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="vModal vModal--checkBottleRequest" id="vModal--checkBottleRequest">
-               <div class="vModal-userFormWrapper">
-                  <div class="vModal-userFormWrapper__header">
-                     <h3>
-                        <img loading="lazy" src="/templates/newvodovoz/assets/img/icons/cabinet/bouttle_popup_icon.svg">
-                        <div>Бутылей у Вас: <span class="accept">x<span class="cabinet-user-bottle-count-popup"></span></span></div>
-                     </h3>
-                     <h2>Спасибо за заявку!</h2>
-                     <p>
-                        Наш менеджер свяжется с Вами<br>
-                        в ближайшее время.
-                     </p>
-                  </div>
-                  <div class="vModal-userFormWrapper__body">
-                     <form class="vModal-userForm" action="/" method="get" novalidate="" enctype="multipart/form-data">
-                        <div class="vModal-userForm__input vModal-userForm__input--submit"><button type="submit">Вернуться на главную страницу</button></div>
-                        <div class="form-error-str response"></div>
-                     </form>
-                  </div>
-                  <div class="loadingWrap">
-                     <div class="loading-dots">
-                        <div class="loading-dots--dot"></div>
-                        <div class="loading-dots--dot"></div>
-                        <div class="loading-dots--dot"></div>
                      </div>
                   </div>
                </div>
@@ -1761,5 +1488,5 @@
          loadCSS('/templates/newvodovoz/assets/build/smartbanner.css?ver=342');
          
       </script><script src="https://www.google.com/recaptcha/api.js" defer></script><script type="text/javascript" src="/templates/newvodovoz/assets/build/site_new.js?ver=342" defer></script><script type="text/javascript" src="/templates/newvodovoz/assets/build/layout2023.js?ver=342" defer></script><script type="text/javascript" src="/templates/newvodovoz/assets/build/users.js?ver=342" defer></script><script type="text/javascript" src="/templates/newvodovoz/assets/build/form_send.js?ver=342" defer></script><script type="text/javascript" src="//api-maps.yandex.ru/2.1/?load=package.full&amp;lang=ru-RU&amp;onload=YandexMaps.init&amp;apikey=386a1297-8051-4f31-81a2-055976076c19&amp;suggest_apikey=d67df327-3552-43b4-839e-ddcf95d4c9d5" defer></script><script type="text/javascript" src="/templates/newvodovoz/assets/build/contacts.js?ver=342" defer></script><script type="text/javascript" src="/templates/newvodovoz/assets/build/smartbanner.js?ver=342" defer></script>
-   </body>
+</body>
 </html>
