@@ -29,3 +29,4 @@ rating-5-star
 Доставка = delivery-delivery  
 самовывоз = delivery-pickup  
 
+Для отображения формы "Как Вы хотите связаться с нами?" необходимо элементу cabinet_order_evaluation-feedBackHub добавить класс "active".
