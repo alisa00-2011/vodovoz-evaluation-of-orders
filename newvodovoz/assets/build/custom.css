@@ -4214,6 +4214,10 @@ numpages white bg
   gap: 4px;
   color: #444444;
   text-align: center;
+  background: none;
+  border: none;
+  font: 400 .625em 'Cuprum', sans-serif;
+  font-size: 18px;
 }
 
 .cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .repeat-order-btn:hover,
@@ -4495,6 +4499,129 @@ numpages white bg
   margin-right: 4px;
 }
 
+.cabinet_order_evaluation-feedBackHub.active{
+  display: block;
+  position: fixed;
+  z-index: 99994;
+  font-size: 20px;
+  line-height: 1em;
+  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Roboto Rouble', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.cabinet_order_evaluation-feedBackHub.active .bg{
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
+  pointer-events: all;
+  cursor: pointer;
+
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet{
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 15em;
+  opacity: 1;
+  pointer-events: none;
+  transition: all 0.2s;
+  display: flex;
+  flex-flow: column nowrap;
+  right: 0;
+  background: white;
+  border-radius: 16px;
+  z-index: 4;
+  padding: 30px 0;
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .line{
+  display: none;
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .title,
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .list{
+  font: 400 .625em 'Cuprum', sans-serif;
+  color:#000;
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .title{
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 24px;
+  line-height: 1em;
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .list{
+  font-size: 17px;
+  z-index: 4;
+  line-height: 1em;
+  overflow: hidden;
+  border-radius: 0 0 0.5em 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .list a {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  color: black;
+  transition: all 0.2s;
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .list a svg {
+  width: 48px;
+  height: 48px;
+  flex: none;
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .list a svg use {
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .list a span {
+}
+
+.cabinet_order_evaluation-feedBackHub.active .actionSheet .list a:hover {
+  background: #f4f4f4;
+}
+
+@media (max-width:425px){
+  .cabinet_order_evaluation-feedBackHub.active .actionSheet{
+    margin: 0;
+    top: 100%;
+    transform: translateY(-100%);
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+  .cabinet_order_evaluation-feedBackHub.active .actionSheet .line{
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 50%;
+    transform: translateX(50%);;
+    width: 144px;
+    border-top: 5px solid black;
+    border-radius: 20px;
+  }
+}
+
 @media (max-width:768px){
   .cabinet_order_evaluation{
     font-size: 14px;
@@ -4502,6 +4629,11 @@ numpages white bg
   
   .cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_orderStatus .orderStatus{
     font-size: 18px;
+  }
+
+  .cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .repeat-order-btn,
+  .cabinet_order_evaluation .cabinet_order_evaluation_actions .cabinet_order_evaluation_buttons .сontact-us-btn{
+    font-size: 14px;
   }
 
   .cabinet_order_evaluation .cabinet_order_evaluation_pay-order .pay-order-btn,
@@ -4533,4 +4665,7 @@ numpages white bg
     margin: 0;
     font-size: 18px;
   }
+  
 }
+
+                   
